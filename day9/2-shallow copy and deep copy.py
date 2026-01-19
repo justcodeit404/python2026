@@ -21,7 +21,22 @@ def copy_use2():
     print(id(c[0][0]))
     print(id(d[0][0]))
     print('-'*50)
+def deepcopy_use():
+    a = [1, 2]
+    b = [3, 4]
+    c = [a, b]
+    d=copy.deepcopy(c)
+    print(id(c))
+    print(id(d))
+    print('-'*50)
+    a[0] = 10
+    print(c)
+    print(d)
+    print(id(c[0]))
+    print(id(d[0]))
+    print('-' * 50)
+
 
 
 if __name__ == '__main__':
-    copy_use2()
+    deepcopy_use()
