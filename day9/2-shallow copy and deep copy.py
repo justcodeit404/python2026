@@ -20,6 +20,7 @@ def copy_use2():
     print(d)
     print(id(c[0][0]))
     print(id(d[0][0]))
+    print('-'*50)
 
 
 if __name__ == '__main__':
